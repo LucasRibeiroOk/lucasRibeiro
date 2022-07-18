@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,700&family=Rubik&display=swap');
+/**Tipos de Letras
+Titulos: font-family: 'Ibarra Real Nova', serif;
+Texto: font-family: 'Rubik', sans-serif;
+/**
+
+/**Paleta de Colores
+#F2F9F1 blanco  
+#388E3C Verde os
+#8BC34A Verde cl
+#DDEEDF Gris
+**/
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/** Grilla General **/
+.gridG{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+.encabezado{
+    grid-area: header;
+    width: 100%;
+}
+
+.principal{
+    grid-area: main;
+    width: 100%;
+}
+.info{
+    grid-area: info;
+    width: 100%;
+}
+.redes{
+    grid-area: footer;
+    width: 100%;
+}
+/**Estilos**/
+header div{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Ibarra Real Nova', serif;
+    color: green;
+    background-color: #DDEEDF ;
+}
+body{
+    background-color:#8BC34A;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+nav{
+    width: 100%;
+    background-color: #F2F9F1;
+    padding: 12px;
+    border-radius: 20px;
+    border: 5px double #002133;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ul li{
+    display: inline;
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+    color: #388E3C ;
+}
+footer h3{
+    color:#DDEEDF;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.antigua{
+    display: flex;
+    gap: 10%;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 60px;
+    padding: 10px;
+}
+.nueva{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 60px;
+    gap: 10%;
+    padding: 10px;  
+}
+h1{
+    font-size:xx-large;
+    padding: 15px;
+    border:5px solid #DDEEDF;
+    margin-top: 1%;
+    font-family: 'Ibarra Real Nova', serif;
+}
+img, iframe{
+    border-radius: 5%;
+}
+
+h2{
+    text-align: left;
+    color: #F2F9F1;
+    text-decoration: underline;
+    margin:10px;    
+    font-family: 'Ibarra Real Nova', serif;
+}
+h3{
+    font-size: larger;
+    text-decoration: underline wavy black;
+    color: #388E3C;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.index{
+    border: 5px double hsl(127, 33%, 90%);
+    padding: 5em;
+    font-size: large;
+    border-radius: 3em;
+    font-family: 'Rubik', sans-serif;
+}
+p{
+    font-family: 'Rubik', sans-serif;
+}
+
+footer{
+    background-color:#388E3C;
+    margin-top: 20px;
+    padding: 20px
+}
+.face{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
+}
+h6{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+.picture{
+    width: 40%;
+    height: auto;
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 300%;
+}
+.logoAston{
+    width: auto;
+    height: auto;
+}
+/*Nuestros deportes*/
+.deporte{
+    text-align: center;
+    font-size: xx-large;
+}
+.deportes{
+    width: auto;
+    height: auto;
+}
+section{
+    margin: 15px;
+}
+.dep1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.dep2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.dep3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.dep4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Historia*/
+
+/*HaceteSocio*/
+form{
+    margin: 5% 20%;
+    border: 10px groove #388E3C ;
+    padding: 5%;
+}
+@media screen and (max-width: 768px){
+    .gridG{
+        height: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "header main"
+        "header main"
+        "footer footer";
+    }
+    .sport{
+        display: flex;
+        flex-direction: column;
+    }
+    .antigua .nueva{
+        display: flex;
+        flex-direction: column;
+    }
+    .encabezado{
+        display: flex;
+        height: 100%;
+        margin-bottom: 0%;
+    }
+    .logo{
+        justify-content:space-evenly ;
+    }
+    .logo, nav ul{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    nav{
+        height: 100%;
+    }
+    label input{
+        width: 100%;
+    }
+    .input{
+        width: 100%;
+    }
+footer{
+    margin-top: 0%;
+}
+}
+@media screen and (max-width: 375px){
+    .gridG{
+        height: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+    .encabezado{
+        display: flex;
+        flex-direction: column;
+    }
+    .antigua, .nueva{
+        display: flex;
+        flex-direction: column;
+    }
+    .picture{
+        width: 50%;
+    }
+    label input{
+        width: 100%;
+    }
+    .input{
+        width: 100%;
+    }
+}
