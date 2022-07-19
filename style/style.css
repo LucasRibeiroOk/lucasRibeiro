@@ -164,6 +164,11 @@ h6{
     height: auto;
 }
 /*Nuestros deportes*/
+.horas{
+    border: 10px groove #388E3C;
+    width: 100%;
+    margin-left: 2%;
+}
 .deporte{
     text-align: center;
     font-size: xx-large;
@@ -200,7 +205,9 @@ section{
     align-items: center;
 }
 /*Historia*/
-
+.fundadores{
+    margin: 4%;
+}
 /*HaceteSocio*/
 form{
     margin: 5% 20%;
@@ -276,4 +283,32 @@ footer{
     .input{
         width: 100%;
     }
+}
+/*ANIMACIONES*/
+.imagen1, .imagen2, .imagen3, .imagen4, .picture, iframe, .fundadores{
+    transition: all 3s;
+}
+.imagen1:hover{
+border-radius:50%;
+box-shadow: 0px 0px 15px 15px #ffffff;
+transform: rotate(360deg);
+}
+.imagen2:hover{
+    transform:scale(1.3);
+}
+.imagen3:hover{
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+}
+.imagen4:hover{
+    transform: rotate(360deg);
+}
+.fundadores:hover{
+    transform: translatey(15%) skew(18deg);
+}
+.picture:hover{
+    transform: scale(110%);
+}
+iframe:hover{
+    transform: translateX(10%);
 }
