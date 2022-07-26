@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
     <title>Hacete Socio</title>
     
@@ -11,105 +12,231 @@
 <body>
     <div class="gridG">
         <header class="encabezado">  
-            <div class="logo">Aston Birra Futbol Club
-                <a href="index.html">
-                    <img src="../img/logoAston.PNG" alt="logoAston">
-                </a>
-            </div> 
-                <hr/>
-            <div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="../index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="./nuestrosDeportes.html">Nuestros Deportes</a>
-                        </li>
-                        <li>
-                            <a href="./historia.html">Historia</a>
-                        </li>
-                        <li>
-                            <a href="./estadio.html">Estadio</a>
-                        </li>
-                        <li>
-                            <a href="./haceteSocio.html">Hacete Socio</a>
-                        </li>
+            <nav class="navbar navbar-expand-lg navbar-light" style ="background-color: #ffffff;">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logoAston.png" alt="logoAston"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="./historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="./estadio.html">Estadio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="./nuestrosDeportes.html">Deportes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="./haceteSocio.html">Socios</a>
+                    </li>
                     </ul>
-                </nav>
-            </div>
+                    <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                    <form class="d-flex">
+                        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Iniciar sesion
+    </button>
+
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Inicio de sesion</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="form2Example1" class="form-control" />
+                    <label class="form-label" for="form2Example1">Email</label>
+                </div>
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                    <input type="password" id="form2Example2" class="form-control" />
+                    <label class="form-label" for="form2Example2">Contraseña</label>
+                </div>
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+                    <div class="col d-flex justify-content-center">
+                    <!-- Checkbox -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                        <label class="form-check-label" for="form2Example31"> Recordarme</label>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <!-- Simple link -->
+                    <a href="#!">Olvidaste la contraseña?</a>
+                    </div>
+                </div>
+                <!-- Submit button -->
+                <button type="button" class="btn btn-primary btn-block mb-4">ingresar</button>
+                <!-- Register buttons -->
+                <div class="text-center">
+                    <p>No tenes cuenta? <a href="#!">Registrate</a></p>
+                    <p>o hacelo mediante:</p>
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-facebook-f"><img src="../img/icons8-facebook-nuevo-24.png" alt="facebook"></i>
+                    </button>
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-twitter"><img src="../img/icons8-twitter-24.png" alt="twitter"></i>
+                    </button>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar Cambios</button>
+        </div>
+        </div>
+    </div>
+    </div>
+                    </form>
+                </div>
+                </div>
+            </nav>
         </header>
     <main class="principal">
-        <h1>Formulario de inscripción</h1>
-        <form>
-            <div>
-                <label for="text">Nombre
-            <input type="text" placeholder="Nombre y apellido"><br>
-            </label></div><br>
-            <div>
-                <label for="email">Correo electrónico:
-                <input type="email" placeholder="aaa@gmail.com" name="email"><br>
-            </label></div><br>
-            <div>
-                <label for="Phone"> Celu de contacto
-                <input type="Phone" placeholder="Sin 0 ni 15" name="phone">
-            </label></div>
-            <br>
-            <l for="time">Horario de preferencia de contacto a partir de las:
-                <label for="time"> 
-                    <input type="time" name="hora" value="11:45" max="22:30" min="10:00" step="1">
-                </label>
-            <br>
-            <div>
-                <label for="number">Edad</label>
+        <section class="h-100">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col">
+                    <div class="card card-registration my-4">
+                    <div class="row g-0">
+                        <div class="col-xl-6 d-none d-xl-block">
+                        <img src="../img/banner.jpg"
+                            alt="Banner Formulario" class="img-fluid w-75"
+                            style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                        </div>
+                        <div class="col-xl-6">
+                        <div class="card-body p-md-5 text-black">
+                            <h3 class="mb-5 text-uppercase">Formulario de inscripción</h3>
+                            <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-outline">
+                                <input type="text" id="form3Example1m" class="form-control form-control-lg" />
+                                <label class="form-label" for="form3Example1m">Nombre</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-outline">
+                                <input type="text" id="form3Example1n" class="form-control form-control-lg" />
+                                <label class="form-label" for="form3Example1n">Apellido</label>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="form-outline mb-4">
+                            <input type="text" id="form3Example8" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Example8">Domicilio</label>
+                            </div>
+                            <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+                            <h6 class="mb-0 me-4">Genero: </h6>
+                            <div class="form-check form-check-inline mb-0 me-4">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                                value="option1" />
+                            <label class="form-check-label" for="femaleGender">Masculino</label>
+                            </div>
+                            <div class="form-check form-check-inline mb-0 me-4">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                                value="option2" />
+                                <label class="form-check-label" for="maleGender">Femenino</label>
+                            </div>
+                            <div class="form-check form-check-inline mb-0">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                                value="option3" />
+                                <label class="form-check-label" for="otherGender">No Binario</label>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-md-11 mb-4">
+                                <Label>Provincia:</Label>
+                                <select class="select">
+                                <option value="1">Buenos Aires</option>
+                                <option value="2">Cordoba</option>
+                                <option value="3">Santa Fe</option>
+                                <option value="4">Otra</option>
+                                </select>
+                            </div>
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+                                        <label for="text">Tipo de Socio</label>
+                                        <select class="select">
+                                        <option value="1">Activo</option>
+                                        <option value="2">Adherente</option>
+                                        <option value="3">Vitalicio</option>
+                                        <option value="4">Menor</option>
+                                        </select>
+                                    </div>
+                            <div class="form-outline mb-4">
+                            <input type="text" id="form3Example90" class="form-control form-control-lg" placeholder="abc123@ejemplo.com" />
+                            <label class="form-label" for="form3Example90">Email</label>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Acepto términos y condiciones
+                                </label>
+                                </div>
+                            </div>
+                        <div class="d-flex justify-content-end pt-3">
+                            <button type="button" class="btn btn-light btn-lg">Borrar todo</button>
+                            <button type="button" class="btn btn-warning btn-lg ms-2">Enviar Info</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
             </div>
-            <input type="number" class="input" placeholder="Edad"><br>
-            <div>
-                <div>Sexo:</div>
-                <div>Masculino
-                    <input type="radio" name="Sexo" value="Masculino">
-                </div>
-                <div>Femenino
-                    <input type="radio" name="Sexo" value="Femenino">
-                </div>
-                <div> No binario 
-                    <input type="radio" name="Sexo" value="No binario">
-                </div>
             </div>
-            <div>Tipo de socio a la cual aplicarias?</div>
-            <select name="Socio" id="Socio"> 
-                <option value="Activo"> Activo</option>
-                <option value="Menor"> Menor</option>
-                <option value="Adherente"> Adherente</option>
-                <option value="Vitalicio"> Vitalicio</option>
-                <option value="Abonado"> Abonado</option>
-            </select>
-            <br>
-            <label for="Escriba Aquí"> Ingrese sus dudas:<br>
-                <textarea placeholder="Escriba Aquí" class="input"></textarea>
-            <div>Terminos y condiciones
-            <input type="checkbox" name="acepta" value="1"></div>
-            <input type="submit" value="Enviar Info">
-        </form>
+        </section>
     </main>
-    <footer class="redes">    
-        <h3>Nuestras Redes Sociales</h3>
-        <div class="face">
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="../img/facebook.png" alt="facebook">
-            </a>
-            <a href="https://twitter.com/?lang=es" target="_blank">
-                <img src="../img/twitter.png" alt="twitter">
-            </a>
-            <a href="https://www.instagram.com/lu.ribeirok/" target="_blank">
-                <img src="../img/instagram.png" alt="instagram">
-            </a>
-            <a href="https://youtube.com" target="_blank">
-                <img src="../img/youtube.png" alt="youtube">
-            </a>
+    <footer class="w-100 py-4 flex-shrink-0">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="h2 text-white">Aston Birra Futbol Club</h5>
+                    <p class="small text-muted mb-0">&copy; Copyrights. Todos los derechos reservados <a class="text-primary" href="https://www.instagram.com/lu.ribeirok/">Proyecto by Lucas Ribeiro</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-3">Menu</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./historia.html">Historia</a></li>
+                        <li><a href="./estadio.html">Estadio</a></li>
+                        <li><a href="./nuestrosDeportes.html">Deportes</a></li>
+                        <li><a href="./haceteSocio.html">Socios</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-3">Seguinos</h5>
+                    <ul class="list-unstyled text-muted d-flex flex-row justify-content-center">
+                        <li><a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://www.instagram.com/lu.ribeirok/" target="_blank"><img src="../img/instagram.png" alt="instagram"></a></li>
+                        <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/twitter.png" alt="twiiter"></a></li>
+                        <li><a href="https://youtube.com" target="_blank"><img src="../img/youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-3">Enterate de las últimas novedades del club</h5>
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="abc123@ejemplo.com" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <h6>By: Lucas Ribeiro</h6>
     </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

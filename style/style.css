@@ -35,21 +35,16 @@ Texto: font-family: 'Rubik', sans-serif;
     grid-area: main;
     width: 100%;
 }
-.info{
-    grid-area: info;
-    width: 100%;
-}
-.redes{
+footer{
     grid-area: footer;
     width: 100%;
 }
 /**Estilos**/
 header div{
-    text-align: center;
-    font-size: x-large;
     font-family: 'Ibarra Real Nova', serif;
+    font: bold;
+    font-size: x-large;
     color: green;
-    background-color: #DDEEDF ;
 }
 body{
     background-color:#8BC34A;
@@ -65,38 +60,22 @@ nav{
     border-radius: 20px;
     border: 5px double #002133;
 }
-nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-ul li{
-    display: inline;
-    list-style: none;
-}
-li a {
-    text-decoration: none;
-    color: #388E3C ;
-}
-footer h3{
-    color:#DDEEDF;
-    font-family: 'Ibarra Real Nova', serif;
-}
+
 .antigua{
     display: flex;
     gap: 10%;
     flex-direction: row;
     align-items: center;
-    margin-top: 60px;
-    padding: 10px;
+    margin-top: 3rem;
+    padding: 1%;
 }
 .nueva{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 3rem;
     gap: 10%;
-    padding: 10px;  
+    padding: 1%;  
 }
 h1{
     font-size:xx-large;
@@ -118,11 +97,9 @@ h2{
 }
 h3{
     font-size: larger;
-    text-decoration: underline wavy black;
     color: #388E3C;
     font-family: 'Ibarra Real Nova', serif;
 }
-
 .index{
     border: 5px double hsl(127, 33%, 90%);
     padding: 5em;
@@ -133,12 +110,17 @@ h3{
 p{
     font-family: 'Rubik', sans-serif;
 }
-
+footer {
+    background: #212529;
+    width: 100%;
+}
+/*  
 footer{
     background-color:#388E3C;
     margin-top: 20px;
     padding: 20px
 }
+
 .face{
     display: flex;
     justify-content: space-evenly;
@@ -148,161 +130,25 @@ h6{
     text-align: center;
     font-family: 'Rubik', sans-serif;
 }
+*/
 .picture{
     width: 40%;
     height: auto;
 }
-.logo{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    align-items: center;
-    font-size: 300%;
-}
-.logoAston{
-    width: auto;
-    height: auto;
-}
+
+
 /*Nuestros deportes*/
-.horas{
-    border: 10px groove #388E3C;
-    width: 100%;
-    margin-left: 2%;
-}
-.deporte{
-    text-align: center;
-    font-size: xx-large;
-}
-.deportes{
-    width: auto;
-    height: auto;
-}
-section{
-    margin: 15px;
-}
-.dep1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.dep2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.dep3{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.dep4{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+
 /*Historia*/
-.fundadores{
-    margin: 4%;
-}
+
+
 /*HaceteSocio*/
-form{
-    margin: 5% 20%;
-    border: 10px groove #388E3C ;
-    padding: 5%;
-}
-@media screen and (max-width: 768px){
-    .gridG{
-        height: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "header main"
-        "header main"
-        "footer footer";
-    }
-    .sport{
-        display: flex;
-        flex-direction: column;
-    }
-    .antigua .nueva{
-        display: flex;
-        flex-direction: column;
-    }
-    .encabezado{
-        display: flex;
-        height: 100%;
-        margin-bottom: 0%;
-    }
-    .logo{
-        justify-content:space-evenly ;
-    }
-    .logo, nav ul{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
-    nav{
-        height: 100%;
-    }
-    label input{
-        width: 100%;
-    }
-    .input{
-        width: 100%;
-    }
-footer{
-    margin-top: 0%;
-}
-}
-@media screen and (max-width: 480px){
-    .gridG{
-        height: 100%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    }
-    .encabezado{
-        display: flex;
-        flex-direction: column;
-    }
-    .antigua, .nueva{
-        display: flex;
-        flex-direction: column;
-    }
-    .picture{
-        width: 50%;
-    }
-    label input{
-        width: 100%;
-    }
-    .input{
-        width: 100%;
-    }
-}
+
 /*ANIMACIONES*/
-.imagen1, .imagen2, .imagen3, .imagen4, .picture, iframe, .fundadores{
+.picture, iframe, .fundadores{
     transition: all 3s;
 }
-.imagen1:hover{
-border-radius:50%;
-box-shadow: 0px 0px 15px 15px #ffffff;
-transform: rotate(360deg);
-}
-.imagen2:hover{
-    transform:scale(1.3);
-}
-.imagen3:hover{
-        transform: rotateY(180deg);
-        transform-style: preserve-3d;
-}
-.imagen4:hover{
-    transform: rotate(360deg);
-}
+
 .fundadores:hover{
     transform: translatey(15%) skew(18deg);
 }
@@ -312,3 +158,72 @@ transform: rotate(360deg);
 iframe:hover{
     transform: translateX(10%);
 }
+
+/* bootstrap */
+.navbar-brand{
+    display: flex;
+    text-align: end;
+}
+
+.carousel{
+    width: 80%;
+    align-self: center;
+}
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+    @media screen and (max-width: 768px){
+        .gridG{
+            height: 100%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "header header "
+            "main main"
+            "footer footer";
+        }
+        h1, h2{
+            font-size: x-large;
+        }
+        .antigua, .nueva{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width: 576px){
+        .gridG{
+            height: 100%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+        }
+        h1, h2{
+            font-size: medium;
+        }
+        .antigua, .nueva{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    footer a {
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    
+    footer a:hover,footer a:focus {
+        text-decoration: none;
+    }
+    .nav-link{
+        transition: all 1s;
+    }
+    .nav-link:hover{
+        background-color: #83e9ae;
+    }
