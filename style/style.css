@@ -227,3 +227,11 @@ iframe:hover{
     .nav-link:hover{
         background-color: #83e9ae;
     }
+.accordion-item{
+    background: rgb(2,0,36);
+    background: linear-gradient(324deg, rgba(2,0,36,1) 0%, rgba(74,195,137,1) 35%, rgba(139,195,74,1) 87%);
+}
+#accordionPanelsStayOpenExample{
+    background: rgb(2,0,36);
+    background: linear-gradient(324deg, rgba(2,0,36,1) 0%, rgba(74,195,137,1) 35%, rgba(139,195,74,1) 87%);
+}
