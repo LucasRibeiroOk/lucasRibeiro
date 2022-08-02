@@ -1,237 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,700&family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,700&family=Rubik&display=swap");
 /**Tipos de Letras
 Titulos: font-family: 'Ibarra Real Nova', serif;
-Texto: font-family: 'Rubik', sans-serif;
-/**
-
+Texto: font-family: 'Rubik', sans-serif;**/
 /**Paleta de Colores
 #F2F9F1 blanco  
 #388E3C Verde os
 #8BC34A Verde cl
 #DDEEDF Gris
 **/
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-}
-/** Grilla General **/
-.gridG{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat( 3, 1fr);
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer";
-}
-.encabezado{
-    grid-area: header;
-    width: 100%;
-}
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box; }
 
-.principal{
-    grid-area: main;
-    width: 100%;
-}
-footer{
-    grid-area: footer;
-    width: 100%;
-}
-/**Estilos**/
-header div{
-    font-family: 'Ibarra Real Nova', serif;
-    font: bold;
-    font-size: x-large;
-    color: green;
-}
-body{
-    background-color:#8BC34A;
-    font-weight: bolder;
-    text-align: center;
-    width: 100%;
-    height: auto;
-}
-nav{
-    width: 100%;
-    background-color: #F2F9F1;
+body {
+  background-color: #8BC34A;
+  font-weight: bolder;
+  text-align: center;
+  width: 100%;
+  height: auto; }
+
+/** Grilla General **/
+.gridG {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+  @media screen and (max-width: 768px) {
+    .gridG {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "header header " "main main" "footer footer"; }
+      .gridG h1, .gridG h2 {
+        font-size: x-large; }
+      .gridG .antigua, .gridG main .nueva, main .gridG .nueva, .gridG .nueva {
+        display: flex;
+        flex-direction: column; } }
+  @media screen and (max-width: 576px) {
+    .gridG {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas: "header" "main" "footer"; }
+      .gridG iframe {
+        width: 60%;
+        height: auto; }
+      .gridG h1, .gridG h2 {
+        font-size: medium; }
+      .gridG .antigua, .gridG main .nueva, main .gridG .nueva, .gridG .nueva {
+        display: flex;
+        flex-direction: column; } }
+
+.encabezado {
+  grid-area: header; }
+
+.principal {
+  grid-area: main; }
+
+footer {
+  grid-area: footer; }
+
+header {
+  font-family: "Ibarra Real Nova", serif;
+  font: bold;
+  font-size: x-large; }
+  header nav {
     padding: 12px;
     border-radius: 20px;
-    border: 5px double #002133;
-}
+    border: 5px double #002133; }
+  header li .nav-link {
+    transition: all 1s; }
+    header li .nav-link:hover {
+      background-color: #83e9ae; }
 
-.antigua{
-    display: flex;
-    gap: 10%;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 3rem;
-    padding: 1%;
-}
-.nueva{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin-top: 3rem;
-    gap: 10%;
-    padding: 1%;  
-}
-h1{
-    font-size:xx-large;
-    padding: 15px;
-    border:5px solid #DDEEDF;
-    margin-top: 1%;
-    font-family: 'Ibarra Real Nova', serif;
-}
-img, iframe{
-    border-radius: 5%;
-}
+main h1 {
+  font-size: xx-large;
+  padding: 15px;
+  border: 5px solid #DDEEDF;
+  margin-top: 1%;
+  font-family: "Ibarra Real Nova", serif; }
 
-h2{
-    text-align: left;
-    color: #F2F9F1;
-    text-decoration: underline;
-    margin:10px;    
-    font-family: 'Ibarra Real Nova', serif;
-}
-h3{
-    font-size: larger;
-    color: #388E3C;
-    font-family: 'Ibarra Real Nova', serif;
-}
-.index{
-    border: 5px double hsl(127, 33%, 90%);
-    padding: 5em;
-    font-size: large;
-    border-radius: 3em;
-    font-family: 'Rubik', sans-serif;
-}
-p{
-    font-family: 'Rubik', sans-serif;
-}
+main .antigua, main .nueva {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 1%; }
+
+main .nueva {
+  flex-direction: row-reverse; }
+
+main img, main iframe {
+  border-radius: 5%; }
+
+main h2 {
+  text-align: left;
+  color: #032c01;
+  margin: 10px;
+  font-family: "Ibarra Real Nova", serif; }
+
+main h3 {
+  font-size: larger;
+  color: #8BC34A;
+  font-family: "Ibarra Real Nova", serif; }
+
+main p {
+  font-family: "Rubik", sans-serif; }
+
+main .index {
+  border: 5px double #ddeedf;
+  padding: 5em;
+  font-size: large;
+  border-radius: 3em;
+  font-family: "Rubik", sans-serif; }
+
+main .picture {
+  width: 40%;
+  height: auto; }
+
 footer {
-    background: #212529;
-    width: 100%;
-}
-/*  
-footer{
-    background-color:#388E3C;
-    margin-top: 20px;
-    padding: 20px
-}
+  background: #212529;
+  width: 100%;
+  height: auto; }
+  footer a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s; }
+    footer a:hover, footer a:focus {
+      text-decoration: none; }
 
-.face{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 15px;
-}
-h6{
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-}
-*/
-.picture{
-    width: 40%;
-    height: auto;
-}
+.navbar-brand {
+  display: flex;
+  text-align: end; }
 
+.carousel {
+  width: 80%;
+  height: auto;
+  align-self: center; }
 
-/*Nuestros deportes*/
-
-/*Historia*/
-
-
-/*HaceteSocio*/
-
-/*ANIMACIONES*/
-.picture, iframe, .fundadores{
-    transition: all 3s;
-}
-
-.fundadores:hover{
-    transform: translatey(15%) skew(18deg);
-}
-.picture:hover{
-    transform: scale(110%);
-}
-iframe:hover{
-    transform: translateX(10%);
-}
-
-/* bootstrap */
-.navbar-brand{
-    display: flex;
-    text-align: end;
-}
-
-.carousel{
-    width: 80%;
-    align-self: center;
-}
 .card-registration .select-input.form-control[readonly]:not([disabled]) {
-    font-size: 1rem;
-    line-height: 2.15;
-    padding-left: .75em;
-    padding-right: .75em;
-    }
-    .card-registration .select-arrow {
-    top: 13px;
-    }
-    @media screen and (max-width: 768px){
-        .gridG{
-            height: 100%;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-areas: 
-            "header header "
-            "main main"
-            "footer footer";
-        }
-        h1, h2{
-            font-size: x-large;
-        }
-        .antigua, .nueva{
-            display: flex;
-            flex-direction: column;
-        }
-    }
-    @media screen and (max-width: 576px){
-        .gridG{
-            height: 100%;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-areas: 
-            "header"
-            "main"
-            "footer";
-        }
-        h1, h2{
-            font-size: medium;
-        }
-        .antigua, .nueva{
-            display: flex;
-            flex-direction: column;
-        }
-    }
-    footer a {
-        color: inherit;
-        text-decoration: none;
-        transition: all 0.3s;
-    }
-    
-    footer a:hover,footer a:focus {
-        text-decoration: none;
-    }
-    .nav-link{
-        transition: all 1s;
-    }
-    .nav-link:hover{
-        background-color: #83e9ae;
-    }
-.accordion-item{
-    background: rgb(2,0,36);
-    background: linear-gradient(324deg, rgba(2,0,36,1) 0%, rgba(74,195,137,1) 35%, rgba(139,195,74,1) 87%);
-}
-#accordionPanelsStayOpenExample{
-    background: rgb(2,0,36);
-    background: linear-gradient(324deg, rgba(2,0,36,1) 0%, rgba(74,195,137,1) 35%, rgba(139,195,74,1) 87%);
-}
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em; }
+  .card-registration .select-input.form-control[readonly]:not([disabled]) .select-arrow {
+    top: 13px; }
+
+.accordion-item, #accordionPanelsStayOpenExample {
+  background: #020024;
+  background: linear-gradient(324deg, #020024 0%, #4ac389 35%, #8bc34a 87%); }
+
+.fundadores {
+  transition: all 3s; }
+  .fundadores:hover {
+    transform: translatey(15%) skew(18deg); }
+
+.picture {
+  transition: all 3s; }
+  .picture:hover {
+    transform: scale(110%); }
+
+iframe {
+  transition: all 3s; }
+  iframe:hover {
+    transform: translateX(10%); }

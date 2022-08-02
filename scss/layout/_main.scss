@@ -1,0 +1,49 @@
+main{
+    h1{
+        font-size:xx-large;
+        padding: 15px;
+        border:5px solid $grey;
+        margin-top: 1%;
+        font-family: $titulo;
+    }
+    .antigua{
+        @include flex-row;
+        gap: 10%;
+        align-items: center;
+        margin-top: 3rem;
+        padding: 1%;
+    }
+    .nueva{
+        @extend .antigua;
+        flex-direction: row-reverse;
+    }
+    img, iframe{
+        border-radius: 5%;
+    }
+    h2{
+        text-align: left;
+        color: #032c01;
+        margin:10px;    
+        font-family: $titulo;
+    }
+    h3{
+        font-size: larger;
+        color: $background;
+        font-family: $titulo;
+    }
+    p{
+        font-family: $texto;
+    }
+    .index{
+        border: 5px double hsl(127, 33%, 90%);
+        padding: 5em;
+        font-size: large;
+        border-radius: 3em;
+        font-family: $texto;    
+    }
+    .picture{
+        @include medidas(40%, auto)
+    }
+}
+
+

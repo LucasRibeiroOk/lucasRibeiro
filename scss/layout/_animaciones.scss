@@ -1,0 +1,19 @@
+.fundadores{
+    transition: all 3s;
+    &:hover{
+        transform: translatey(15%) skew(18deg);
+    }
+}
+.picture{
+    transition: all 3s;
+    &:hover{
+        transform: scale(110%);
+    }
+}
+iframe{
+    transition: all 3s;
+    &:hover{
+        transform: translateX(10%);
+    }
+}
+

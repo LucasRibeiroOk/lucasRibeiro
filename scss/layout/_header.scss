@@ -1,0 +1,18 @@
+header{
+    font-family: $titulo;
+    font: bold;
+    font-size: x-large;
+    nav{
+        padding: 12px;
+        border-radius: 20px;
+        border: 5px double $border;
+    }
+    li{
+        .nav-link{
+            transition: all 1s;
+            &:hover{
+                background-color:$hover;
+            }
+        }
+    }
+}

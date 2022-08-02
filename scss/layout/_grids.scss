@@ -1,0 +1,50 @@
+/** Grilla General **/
+.gridG{
+    @include medidas (100%, 100%);
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    @include tablet{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "header header "
+            "main main"
+            "footer footer";
+            h1, h2{
+                font-size: x-large;
+            }
+            .antigua, .nueva{
+                @include flex-column
+            }
+    }
+    @include mobile{
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+            iframe{
+                @include medidas(60%, auto)
+            } 
+            h1, h2{
+                font-size: medium;
+            }
+            .antigua, .nueva{
+                @include flex-column
+            }
+        }
+    }
+.encabezado{
+    grid-area: header;
+}
+.principal{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+

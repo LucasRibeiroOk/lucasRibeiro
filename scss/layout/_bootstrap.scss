@@ -1,0 +1,21 @@
+.navbar-brand{
+    display: flex;
+    text-align: end;
+}
+.carousel{
+    @include medidas (80%, auto);
+    align-self: center;
+}
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    .select-arrow {
+        top: 13px;
+        }
+    }
+.accordion-item, #accordionPanelsStayOpenExample{
+        background: rgb(2,0,36);
+        background: linear-gradient(324deg, rgba(2,0,36,1) 0%, rgba(74,195,137,1) 35%, rgba(139,195,74,1) 87%);
+    }
