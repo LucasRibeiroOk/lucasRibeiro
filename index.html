@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="futbol, argentina, noticias, novedades, club">
+    <meta name="description" content="Sitio oficial del club Aston Birra. Enterate de las últimas novedades del club">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <title>Home</title>
     </head>
@@ -36,10 +39,10 @@
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
-                <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar sesion
+                    <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar sesion
                         </button>
-                <!-- Modal -->
+                    <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -49,17 +52,17 @@
                                 </div>
                                 <div class="modal-body">
                                     <form>
-                <!-- Email input -->
+                    <!-- Email input -->
                                 <div class="form-outline mb-4">
                                     <input type="email" id="form2Example1" class="form-control" />
                                     <label class="form-label" for="form2Example1">Email</label>
                                 </div>
-                <!-- Password input -->
+                    <!-- Password input -->
                                 <div class="form-outline mb-4">
                                     <input type="password" id="form2Example2" class="form-control" />
                                     <label class="form-label" for="form2Example2">Contraseña</label>
                                 </div>
-                <!-- 2 column grid layout for inline styling -->
+                    <!-- 2 column grid layout for inline styling -->
                                 <div class="row mb-4">
                                     <div class="col d-flex justify-content-center">
                     <!-- Checkbox -->
@@ -70,14 +73,14 @@
                                     </div>
                                     <div class="col">
                     <!-- Simple link -->
-                                        <a href="#!">Olvidaste la contraseña?</a>
+                                        <a class="text-success" href="#!">Olvidaste la contraseña?</a>
                                     </div>
                                 </div>
-                <!-- Submit button -->
-                                    <button type="button" class="btn btn-primary btn-block mb-4">ingresar</button>
-                <!-- Register buttons -->
+                    <!-- Submit button -->
+                                    <button type="button" class="btn btn-success btn-block mb-4">ingresar</button>
+                    <!-- Register buttons -->
                                 <div class="text-center">
-                                    <p>No tenes cuenta? <a href="#!">Registrate</a></p>
+                                    <p>No tenes cuenta? <a class="text-success" href="#!">Registrate</a></p>
                                     <p>o hacelo mediante:</p>
                                     <button type="button" class="btn btn-link btn-floating mx-1">
                                     <i class="fab fa-facebook-f"><img src="./img/icons8-facebook-nuevo-24.png" alt="facebook"></i>
@@ -88,7 +91,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                                    <button type="button" class="btn btn-success">Guardar Cambios</button>
                                 </div>
                                 </div>
                             </div>
@@ -99,19 +102,93 @@
             </nav>
         </header>
         <main class="principal">
-            <h1> Ya salió la nueva equipacion</h1>
+            <h1> Ya salió la nueva equipación</h1>
             <h2> Le decimos chau a nuestra antigua camiseta...</h2>
                 <div class="antigua">
-                    <iframe width="560" height="300" class="videoM" src="https://www.youtube.com/embed/w-u9cvyWedM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="300" src="https://www.youtube.com/embed/w-u9cvyWedM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p class="index">Los colores del uniforme actual provienen de la bandera nacional. Camiseta verde y shorts blancos  Sin embargo, tan tradicional vestimenta, no comenzó a ser utilizada sino hasta el Campeonato Panamericano 1956, esto como un intento de alentar la identidad nacional a jugadores y afición, ligándolos con el uniforme del equipo nacional. Por necesidad en competencias internacionales, se tuvo que buscar un segundo uniforme.
-                    Ciertamente, los tonos verdes y los modelos variaron durante sesenta años, pero nunca se abandonó el color que identifica al Aston Birra e incluso a todas sus análogas con límite de edad y en la categoría femenina, así como a las delegaciones de otras disciplinas deportivas
                     </p>
                 </div>
                 <h2>Y le decimos hola al conjunto que nos va a llevar a lo más alto de la tabla</h2>
                     <div class="nueva">
-                        <img src="./img/casaca.jpg" class="picture img-fluid" alt="equipacion">
-                        <p class="index nuevaM">El Aston Birra presentó este lunes sus nuevas equipaciones para la temporada  2022-2023. Para la primera equipación, el regreso de las franjas verdiblancas con un tono clásico donde el verde predomina.Este uniforme tiene una peculiaridad en su elaboración debido a que, luego cuatro años de usar la camiseta sin un estilo propio, la marca alemana recuperó el tradicional verde que representa al país. Además, con la presentación del jersey verde, se pudo conocer que el mismo será acompañado de un short blanco y medias en color verde.
+                        <img data-aos="fade-left" data-aos-duration="1000" src="./img/casaca.jpg" class="picture img-fluid" alt="equipacion">
+                        <p data-aos="fade-right"data-aos-duration="1000" class="index nuevaM">El Aston Birra presentó este lunes sus nuevas equipaciones para la temporada  2022-2023. Para la primera equipación, el regreso de las franjas verdiblancas con un tono clásico donde el verde predomina.Este uniforme tiene una peculiaridad en su elaboración debido a que, luego cuatro años de usar la camiseta sin un estilo propio, la marca alemana recuperó el tradicional verde que representa al país.
                         </p>
+                    </div>
+                    <h2 data-aos="zoom-in" data-aos-duration="2000">Noticias de la semana:</h2>
+                    <div class="destacadas">
+                            <div data-aos="flip-up" data-aos-duration="3000" class="card dep1 card-deportes" style="width: 18rem;">
+                                <img src="./img/comunicado.jpeg" class="card-img-top" alt="comunicadoDePrensa">
+                                <div class="card-body">
+                                    <h5 class="card-title">Comunicado para los socios y socias</h5>
+                                    <p class="card-text">Se dio a conocer el listado de socios que pasan de categoria y la fecha de las elecciones presidenciales</p>
+                                    <a href="#"><button>
+                                        <span class="transition"></span>
+                                        <span class="gradient"></span>
+                                        <span class="label">Leer más</span>
+                                        </button></a>   
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="3000" class="card dep2 card-deportes" style="width: 18rem;">
+                                <img src="./img/convocados.jpg" class="card-img-top" alt="convocados">
+                                <div class="card-body">
+                                    <h5 class="card-title">Convocados para el Domingo</h5>
+                                    <p class="card-text">La lista de convocados para enfrentar a Deportivo Derrota éste domingo ya está publicada y vuelve una leyenda</p>
+                                    <a href="#"><button>
+                                        <span class="transition"></span>
+                                        <span class="gradient"></span>
+                                        <span class="label">Leer más</span>
+                                        </button></a>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="3000" class="card dep3 card-deportes" style="width: 18rem;">
+                                <img src="./img/cesped.jpg" class="card-img-top" alt="CambioDeCesped">
+                                <div class="card-body">
+                                    <h5 class="card-title">Continuan las obras en nuestro estadio</h5>
+                                    <p class="card-text">Las obras por el cambio de cesped en nuestro estadio no se toma respiro y estaría todo listo para el domingo</p>
+                                    <a href="#"><button>
+                                        <span class="transition"></span>
+                                        <span class="gradient"></span>
+                                        <span class="label">Leer más</span>
+                                        </button></a>
+                                </div>
+                            </div>
+                            <div data-aos="flip-down" data-aos-duration="3000" class="card dep4 card-deportes" style="width: 18rem;">
+                                <img src="./img/hockey.jpg" class="card-img-top" alt="hockey">
+                                <div class="card-body">
+                                    <h5 class="card-title">Preparen los palos y las bochas</h5>
+                                    <p class="card-text">Se inauguró oficialmente nuestro estadio de Hockey despues de estar 3 años en construcción</p>
+                                    <a href="#"><button>
+                                        <span class="transition"></span>
+                                        <span class="gradient"></span>
+                                        <span class="label">Leer más</span>
+                                        </button></a>
+                                </div>
+                            </div>
+                            <div data-aos="flip-down" data-aos-duration="3000" class="card dep5 card-deportes" style="width: 18rem;">
+                                <img src="./img/reserva.jpg" class="card-img-top" alt="reserva">
+                                <div class="card-body">
+                                    <h5 class="card-title">La reserva sigue sin levantar cabeza</h5>
+                                    <p class="card-text">éste sabado por la tarde los chicos de la reserva volvieron a perder de local y suman 5 derrotas consecutivas</p>
+                                    <a href="#"><button>
+                                        <span class="transition"></span>
+                                        <span class="gradient"></span>
+                                        <span class="label">Leer más</span>
+                                        </button></a>
+                                </div>
+                            </div>
+                            <div data-aos="flip-down" data-aos-duration="3000" class="card dep6 card-deportes" style="width: 18rem;">
+                                <img src="./img/voley.jpg" class="card-img-top" alt="voley">
+                                <div class="card-body">
+                                    <h5 class="card-title">"Somos campeonas otra vez"</h5>
+                                    <p class="card-text">Las chicas gritaron campeonas despues de vencer a las diablitas de visitante coronando su brillante campaña</p>
+                                    <a href="#"><button>
+                                        <span class="transition"></span>
+                                        <span class="gradient"></span>
+                                        <span class="label">Leer más</span>
+                                        </button></a>
+                                </div>
+                            </div>
                     </div>
         </main>
         <footer class="w-100 py-4 flex-shrink-0">
@@ -119,7 +196,7 @@
                 <div class="row gy-4 gx-5">
                     <div class="col-lg-3 col-md-6">
                         <h5 class="h2 text-white">Aston Birra Futbol Club</h5>
-                        <p class="small text-muted mb-0">&copy; Copyrights. Todos los derechos reservados <a class="text-primary" href="https://www.instagram.com/lu.ribeirok/">Proyecto by Lucas Ribeiro</a></p>
+                        <p class="small text-muted mb-0">&copy; Copyrights. Todos los derechos reservados <a class="text-success" href="https://www.instagram.com/lu.ribeirok/">Proyecto by Lucas Ribeiro</a></p>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-3">Menu</h5>
@@ -145,7 +222,7 @@
                         <form action="#">
                             <div class="input-group mb-3">
                                 <input class="form-control" type="text" placeholder="abc123@ejemplo.com" aria-label="Recipient's username" aria-describedby="button-addon2">
-                                <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
+                                <button class="btn btn-success" id="button-addon2" type="button">@<i class="fas fa-paper-plane"></i></button>
                             </div>
                         </form>
                     </div>
@@ -154,5 +231,7 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>

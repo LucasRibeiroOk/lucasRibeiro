@@ -10,6 +10,9 @@
 @mixin flex-row {
     display: flex;
     flex-direction:row
-    
+}
+@mixin flex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
 }
 

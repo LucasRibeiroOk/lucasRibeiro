@@ -11,6 +11,7 @@ main{
         gap: 10%;
         align-items: center;
         margin-top: 3rem;
+        margin-bottom: 3rem;
         padding: 1%;
     }
     .nueva{
@@ -26,6 +27,12 @@ main{
         margin:10px;    
         font-family: $titulo;
     }
+    .ubi{
+        font-size: larger;
+        font-family: $titulo;
+        align-self: center;
+        color: $border;
+    }
     h3{
         font-size: larger;
         color: $background;
@@ -36,14 +43,109 @@ main{
     }
     .index{
         border: 5px double hsl(127, 33%, 90%);
-        padding: 5em;
+        padding: 3em;
         font-size: large;
         border-radius: 3em;
         font-family: $texto;    
     }
     .picture{
-        @include medidas(40%, auto)
+        @include medidas(40%, auto);
+        margin-bottom: 3rem;
     }
+    .destacadas{
+        justify-items: center;
+        align-items: stretch;
+        gap: 2rem;
+        margin-bottom: 1rem;
+        .card-deportes{
+            background-color: $hover;
+        }
+    }
+    .history{
+        margin-bottom: 2rem;
+
+    }
+    .history1{
+        margin-bottom: 3rem;
+    }
+    .his1, .his3, .est2, .est4{
+        @include flex-row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1%;
+        @include tablet{
+            @include flex-column
+        }
+        @include mobile{
+            @include flex-column
+        }
+    }
+    .his2, .his4, .est1, .est3{
+        @include flex-reverse;
+        @extend .his1;
+        @include tablet{
+            @include flex-column
+        }
+        @include mobile{
+            @include flex-column
+        }
+    }
+    .est1, .est2{
+        @extend .antigua;
+    }   
+    .ubi{
+        margin-top: 5%;
+    }
+button {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: large;
+    padding: 0.8em 2em;
+    font-weight: 300;
+    background: $footer;
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    }
+    .gradient {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 0.6em;
+        margin-top: -0.25em;
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+    }
+    .label {
+    position: relative;
+    top: -1px;
+    }
+    .transition {
+        transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        transition-duration: 500ms;
+        background-color: rgba(16, 185, 129, 0.6);
+        border-radius: 9999px;
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    button:hover .transition {
+    width: 14em;
+    height: 14em;
+    }
+    button:active {
+    transform: scale(0.97);
+    }
+
 }
+
+
+
 
 

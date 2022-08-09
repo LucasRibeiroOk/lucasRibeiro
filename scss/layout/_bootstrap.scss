@@ -3,7 +3,7 @@
     text-align: end;
 }
 .carousel{
-    @include medidas (80%, auto);
+    @include medidas (70%, auto);
     align-self: center;
 }
 .card-registration .select-input.form-control[readonly]:not([disabled]) {
@@ -19,3 +19,6 @@
         background: rgb(2,0,36);
         background: linear-gradient(324deg, rgba(2,0,36,1) 0%, rgba(74,195,137,1) 35%, rgba(139,195,74,1) 87%);
     }
+.accordion-button{
+    background-color: $grey;
+}

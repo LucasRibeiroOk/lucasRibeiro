@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css":"node-sass --include-path scss scss/style.scss style/style.css",
-    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+    "build-css": "node-sass --include-path scss scss/style.scss style/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }
